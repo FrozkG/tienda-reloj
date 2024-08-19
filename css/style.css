@@ -30,6 +30,8 @@
 
 .contenedor {
   display: flex;
+  contain: paint;
+  justify-content: space-between;
   gap: 50px;
   max-width: 1220px;
   margin: 20px auto;
@@ -37,10 +39,12 @@
 }
 
 .contenedor-reloj{
+  width: 100%;
   display: grid;
+  justify-content: center;
   gap: 40px 50px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  margin: 0 auto;
+  transition: 0.3s;
 }
 
 .reloj-card {
@@ -50,8 +54,6 @@
   border: 1px solid gray;
   padding: 20px 0;
   border-radius: 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   transition: .3s;
 }
 
