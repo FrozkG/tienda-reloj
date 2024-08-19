@@ -1,0 +1,232 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  
+}
+
+.header-reloj {
+  background-image: url(../img/header.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.header-reloj h1 {
+  padding-top: 30px;
+  color: white;
+  font-size: 2.1em;
+  font-weight: 800;
+}
+
+.contenedor {
+  display: flex;
+  gap: 50px;
+  max-width: 1220px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.contenedor-reloj{
+  display: grid;
+  gap: 40px 50px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 0 auto;
+}
+
+.reloj-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid gray;
+  padding: 20px 0;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: .3s;
+}
+
+.reloj-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.reloj-card span {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.img-item {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.boton-item {
+  color: white;
+  margin-top: 10px;
+  background: black;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.menu-compra {
+  min-width: 380px;
+  display: flex;
+  flex-direction: column;
+  border: solid 1px gray;
+  border-radius: 15px;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: auto;
+}
+
+.header-menu {
+  text-align: center;
+  color: white;
+  background: black;
+  padding: 30px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.contenido-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.img-menu {
+  width: 80px;
+  height: 80px;
+}
+
+.resumen-menu {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.nombre-menu {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+.btn-menos, .btn-mas {
+  cursor: pointer;
+  background: none;
+  border: solid black 2px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-menos:hover, .btn-mas:hover {
+  color: white;
+  background: black;
+}
+
+.cantidad-menu {
+  margin: 0 5px;
+}
+
+.precio-reloj {
+  margin-left: 10px;
+}
+
+
+
+.btn-eliminar {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  border: solid 2px black;
+  border-radius: 10px;
+  transition: 0.3s;
+  font-size: 18px;
+}
+
+.btn-eliminar:hover {
+  color: white;
+  background-color: black;
+}
+
+
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  background: whitesmoke;
+  border-top: solid 1px gray;
+  border-bottom-right-radius: ;
+  padding: 30px;
+  font-weight: bold;
+}
+
+.total-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-pagar {
+  cursor: pointer;
+  color: white;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.btn-pagar:hover {
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 900px) {
+  
+  .contenedor {
+      display: block;
+    }
+
+    .menu-compra{
+      margin-top: 30px;
+    }
+  
+} 
+
+@media (max-width: 599px) {
+
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .menu-compra {
+    min-width: 0;
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
